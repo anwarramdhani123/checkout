@@ -104,8 +104,8 @@ form.whatsapp-form {
 <div class="datainput">
 <select id="wa_select">
   <option hidden='hidden' selected='selected' value='default'>Beli Berapa</option>
-  <option value="1">Beli 1 Buku (Rp. 68.500)</option>
-  <option value="1">Beli 2 Buku (Rp. 137.000)</option>
+  <option value="1">Beli 1 Buku</option>
+  <option value="1">Beli 2 Buku</option>
 </select>
 </div>
 <div class="datainput">
@@ -125,7 +125,8 @@ form.whatsapp-form {
 <center>Harga Sewaktu-waktu Dapat Diskon, Silahkan Tanyakan Pada Penerbit Saat Mengirim Pesan Ini</center>
         <br />
         <center>Total Harga Akan Diberikan Oleh Penerbit Setelah Pesan Diterima. Buku Dikirim Langsung Dari Penerbit</center>
-<center>Part Of anwr.my.id</center>
+<br />
+        <center>Part Of anwr.my.id</center>
 
 <script type="text/javascript">
 //<![CDATA[
@@ -157,7 +158,7 @@ var input_select1 = $("#wa_select :selected").text(),
 /* Final Whatsapp URL */
 var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
     '*Name* : ' + input_name1 + '%0A' +
-    '*Email Address* : ' + input_email1 + '%0A' +
+    '*Email* : ' + input_email1 + '%0A' +
     '*Banyaknya* : ' + input_select1 + '%0A' +
     '*No WhatsApp* : ' + input_number1 + '%0A' +
     '*Alamat* : ' + input_textarea1 + '%0A';
